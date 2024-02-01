@@ -24,21 +24,21 @@ module.exports = {
         allowNull: false,
       },
       departureAirportId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: "Airports",
-          key: "id",
+          key: "code",
         },
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       },
       arrivalAirportId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: "Airports",
-          key: "id",
+          key: "code",
         },
         onDelete: "CASCADE",
         onUpdate: "CASCADE",

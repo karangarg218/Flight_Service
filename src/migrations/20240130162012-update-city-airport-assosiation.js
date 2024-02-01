@@ -17,6 +17,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    // await queryInterface.removeConstraint("Airports", "City_check_constraint");
+    await queryInterface.removeConstraint("Airports", "City_check_constraint");
   },
 };
